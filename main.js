@@ -289,3 +289,21 @@
 // ======================
 
 // VN: 4.2 - end
+
+// VN: 4.3 - start
+
+// ======================
+
+// When to use array
+// -> when order is important
+// -> when you need faster access (by index) or adding or removing (at the end not start)
+
+// When to use object
+// -> when order isn't important
+// -> when you need faster access or remove
+// Object.keys(person); -> Time Complexity: O(n)
+// Object.values(person); -> Time Complexity: O(n)
+// Object.entries(person); -> Time Complexity: O(n)
+
+// ====================
+// VN: 4.3 - end
