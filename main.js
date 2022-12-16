@@ -9,3 +9,104 @@
 // O(n^2)- যখন কোনো প্রোগ্রাম এর  ইনপুট (n) এর সাথে অপারেশন সংখ্যা বর্গানুপাতিক  বা Quadrilateral  হার এ বৃদ্ধি পায়। সাধারণত ডাবল  লুপ এর ক্ষেত্রে হয় এবং ২ টি  লুপই   যদি (n) সংখ্যক বার চলে।
 
 // O(n^3)- যখন কোনো প্রোগ্রাম এর  ইনপুট (n) এর সাথে অপারেশন সংখ্যা ৩ গুন  হার এ বৃদ্ধি পায়। সাধারণত ডাবল  লুপ এর ক্ষেত্রে হয় এবং ৩ টি  লুপই   যদি (n) সংখ্যক বার চলে।
+
+// VN: 3.1 - start
+
+// Worse case - Big(O)
+// Bester case - (omega)
+// Average case - (theta)
+// How number of operation rate increases/relates with input
+
+// =======================
+// function addThreeTimes(n) {
+//   return n + n + n;
+// }
+
+// addThreeTimes(20);
+
+// Complexity : O(1) - Constant
+// =======================
+
+// =======================
+// function counter(n) {
+// let count = 0;
+//   for (let i = 0; i < n; i++) {
+//     count ++;
+//   }
+// return count;
+// }
+
+// console.log(counter(10));
+
+// Complexity : O(n) - linear
+// =======================
+
+// =======================
+// function counter(n) {
+//   let count = 0;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(counter(10));
+
+// Complexity : O(n^2) -> Quadratic
+// =======================
+
+// =======================
+// function counter(n) {
+//   let count = 0;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < 2; j++) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(counter(10));
+
+// Complexity : O(n * 2) -> O(2n) ->  remove constant (2) -> O(n)
+// =======================
+
+// =======================
+// function counter(n) {
+//   let count = 0;
+//   for (let i = 0; i < n; i++) {
+//     count++;
+//   }
+//   for (let j = 0; j < n; j++) {
+//     count++;
+//   }
+//   return count;
+// }
+
+// console.log(counter(10));
+
+// Complexity : O(n) + O(n) -> O(2n) -> O(n)
+// =======================
+
+// =======================
+// function counter(n) {
+//   let count = 0;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//       count++;
+//     }
+//   }
+//   for (let k = 0; k < n; k++) {
+//     count++;
+//   }
+//   return count;
+// }
+
+// console.log(counter(10));
+
+// Complexity : O(n^2) + O(n) -> O(n^2) -> just we need worst case -> O(n^2) is worst case than O(n).
+// =======================
+
+// VN: 3.1 - end
