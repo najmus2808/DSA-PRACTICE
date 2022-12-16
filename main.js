@@ -215,3 +215,39 @@
 // =======================
 
 // VN: 3.4 - end
+
+// VN: 4.1 - start
+
+// Array and Object(performance)- Big(O)
+
+// ===========Array============
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// console.log(arr.length)
+
+// access by index -> Time Complexity: O(1)
+// console.log(arr[arr.length - 1])
+
+// adding item/element at the end of the array -> Time Complexity: O(1)
+// arr[arr.length] = 9;
+// arr.push(10)
+
+// removing element from end of the array -> Time Complexity: O(1)
+// arr.pop()
+
+// adding an element to the beginning of the array -> Time Complexity: O(n)
+// arr.unshift(2);
+// removing an element from the beginning of the array -> Time Complexity: O(n)
+// arr.shift();
+
+// finding element from an array -> Time Complexity: O(n)
+// for (let element of arr) {
+//   if (element === 10) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// forEach, map, filter, reduce, slice, splice -> Time Complexity: O(n)
+// =======================
+
+// VN: 4.1 - end
