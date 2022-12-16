@@ -110,3 +110,51 @@
 // =======================
 
 // VN: 3.1 - end
+
+// VN: 3.2 - start
+
+// =======================
+
+// function logAtLeast5(n) {
+//   for (let i = 0; i <= Math.max(5, n); i++) {
+//     console.log(i);
+//   }
+// }
+
+// logAtLeast5(3);
+// logAtLeast5(30);
+
+// Complexity : if n <= 5 then O(1) otherwise O(n).
+// =======================
+
+// function logAtMost5(n) {
+//   for (let i = 0; i <= Math.min(5, n); i++) {
+//     console.log(i);
+//   }
+//
+
+// logAtMost5(30);
+
+// Complexity : O(1) -> because height iteration number = 5. -> always choose worst case
+// =======================
+
+// =======================
+
+// function log(a, b) {
+//   for (let i = 0; i < a; i++) {
+//     console.log("first =>", i);
+//   }
+
+//   for (let j = 0; j < b; j++) {
+//     console.log("second =>", j);
+//   }
+// }
+// log(3, 5);
+// log(10, 10);
+
+// Complexity : O(m + n) -> because of two inputs are difference and there values are difference
+// if the argument value of a & b are same like log(10, 10) then the Complexity : O(n) + O(n) = O(2n) = O(n)
+
+// =======================
+
+// VN: 3.2 - end
