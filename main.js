@@ -239,7 +239,7 @@
 // removing an element from the beginning of the array -> Time Complexity: O(n)
 // arr.shift();
 
-// finding element from an array -> Time Complexity: O(n)
+// finding/searching element from an array -> Time Complexity: O(n)
 // for (let element of arr) {
 //   if (element === 10) {
 //     return true;
@@ -251,3 +251,41 @@
 // =======================
 
 // VN: 4.1 - end
+
+// VN: 4.2 - start
+
+// ===========Object============
+
+// Remember there is no indexing like an array
+
+// const person = {
+//   name: "John",
+//   email: "john@ex;ample.com",
+// };
+
+// adding element -> Time Complexity: O(1)
+// person.profession = "programmer";
+
+// delete element -> Time Complexity: O(1)
+// delete person.profession;
+
+// searching -> Time Complexity: O(1)
+// console.log("emil" in person);
+
+// searching -> Time Complexity: O(n)
+
+// function search(searchKey) {
+//   for (let key in person) {
+//     if (key === searchKey) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+
+// console.log(search("email"));
+
+// ======================
+
+// VN: 4.2 - end
