@@ -24,7 +24,7 @@
 
 // addThreeTimes(20);
 
-// Complexity : O(1) - Constant
+// Time Complexity : O(1) - Constant
 // =======================
 
 // =======================
@@ -38,7 +38,7 @@
 
 // console.log(counter(10));
 
-// Complexity : O(n) - linear
+// Time Complexity : O(n) - linear
 // =======================
 
 // =======================
@@ -54,7 +54,7 @@
 
 // console.log(counter(10));
 
-// Complexity : O(n^2) -> Quadratic
+// Time Complexity : O(n^2) -> Quadratic
 // =======================
 
 // =======================
@@ -70,7 +70,7 @@
 
 // console.log(counter(10));
 
-// Complexity : O(n * 2) -> O(2n) ->  remove constant (2) -> O(n)
+// Time Complexity : O(n * 2) -> O(2n) ->  remove constant (2) -> O(n)
 // =======================
 
 // =======================
@@ -87,7 +87,7 @@
 
 // console.log(counter(10));
 
-// Complexity : O(n) + O(n) -> O(2n) -> O(n)
+// Time Complexity : O(n) + O(n) -> O(2n) -> O(n)
 // =======================
 
 // =======================
@@ -106,7 +106,7 @@
 
 // console.log(counter(10));
 
-// Complexity : O(n^2) + O(n) -> O(n^2) -> just we need worst case -> O(n^2) is worst case than O(n).
+// Time Complexity : O(n^2) + O(n) -> O(n^2) -> just we need worst case -> O(n^2) is worst case than O(n).
 // =======================
 
 // VN: 3.1 - end
@@ -124,7 +124,7 @@
 // logAtLeast5(3);
 // logAtLeast5(30);
 
-// Complexity : if n <= 5 then O(1) otherwise O(n).
+// Time Complexity : if n <= 5 then O(1) otherwise O(n).
 // =======================
 
 // function logAtMost5(n) {
@@ -135,7 +135,7 @@
 
 // logAtMost5(30);
 
-// Complexity : O(1) -> because height iteration number = 5. -> always choose worst case
+// Time Complexity : O(1) -> because height iteration number = 5. -> always choose worst case
 // =======================
 
 // =======================
@@ -152,9 +152,66 @@
 // log(3, 5);
 // log(10, 10);
 
-// Complexity : O(m + n) -> because of two inputs are difference and there values are difference
+// Time Complexity : O(m + n) -> because of two inputs are difference and there values are difference
 // if the argument value of a & b are same like log(10, 10) then the Complexity : O(n) + O(n) = O(2n) = O(n)
 
 // =======================
 
 // VN: 3.2 - end
+
+// ========SPACE COMPLEXITY =========
+
+// VN: 3.3 - Code doesn't exit
+
+// VN: 3.4 - start
+
+// 1. Most primitives (booleans, number, undefined, null, char) are constant space.
+// 2. String requires O(n) space (where n is the length of the string).
+// 3. Reference types are generally O(n). Where n is the length of the array or the number of keys (for object).
+
+// let number = 1000 -> O(1)
+
+// let boolean = true; -> O(1)
+
+// const str = "ldskfjlskdfjsdl" -> O(n)
+
+// const array = [1, 2, 3, 4, 5, 6] -> O(n)
+
+// const obj = {
+//     name: "Sakib",
+//     email: "najmus2808@gmail.com"
+// } -> O(n)
+
+// =======================
+
+// function sum(array) {
+//   let total = 0; // primitive data type
+//   for (let i = 0; i < array.length; i++) {
+//     total += array[i];
+//   }
+//   return total;
+// }
+
+// console.log(sum([1, 3, 5, 6, 7]));
+
+// Space Complexity: O(1)
+
+// =======================
+
+// =======================
+
+// function double(array) {
+//   let newArray = []; // reference data type
+//   for (let i = 0; i < array.length; i++) {
+//     newArray.push(2 * array[i]);
+//   }
+//   return newArray;
+// }
+
+// console.log(double([1, 3, 5, 6, 7]));
+
+// Space Complexity: O(n)
+
+// =======================
+
+// VN: 3.4 - end
