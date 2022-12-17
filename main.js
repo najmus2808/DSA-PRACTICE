@@ -390,3 +390,29 @@
 
 // ===========================
 // VN: 5.3 - end
+
+// VN: 5.4 - start
+// =============================
+
+// check the element of first array in 2nd array
+// if element exists return true otherwise return false
+
+// input array1-['a', 'b', 'c'] array2-[1, 2, 3, 'z'] // false
+// input array1-['a', 'b', 'c'] array2-[1, 2, 3, 'c'] // true
+// Time Complexity: O(n * m) -> because both array are difference
+
+// function isElementExists(arr1, arr2) {
+//   let exists = false;
+//   for (let element of arr1) {
+//     if (arr2.includes(element)) {
+//       exists = true;
+//       break;
+//     }
+//   }
+//   return exists;
+// }
+
+// console.log(isElementExists(["a", "b", "c"], [1, 2, 3, "c"]));
+
+// ======================
+// VN: 5.4 - end
