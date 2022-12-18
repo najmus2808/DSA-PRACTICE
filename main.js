@@ -469,3 +469,74 @@
 // VN: 7.1 - end
 
 // =======================
+
+// VN: 7.2 - start
+// =====================
+// Find sum from an array
+
+// function sum(array) {
+//   let sum = 0;
+//   for (let number of array) {
+//     sum += number;
+//   }
+//   return sum;
+// }
+
+// console.log(sum([1, 2, 3]));
+
+// Find min number from an array
+
+// function min(array) {
+//   let min = array[0];
+//   for (let number of array) {
+//     if (number < min) {
+//       min = number;
+//     }
+//   }
+//   return min;
+// }
+
+// console.log(min([1, 4, 5, -6]));
+
+// Find max number form an array
+
+// function max(array) {
+//   let max = array[0];
+//   for (let number of array) {
+//     if (number > max) {
+//       max = number;
+//     }
+//   }
+//   return max;
+// }
+
+// console.log(max([1, 4, 5, -6]));
+
+// Using Math.max and Math.min
+
+// const array = [1, 2, 3, 4, 5, 6];
+// console.log(Math.max(array)); -> Result - NAN
+// Must use spread operator for break down the array
+// console.log(Math.max(...array)); -> Result - 6
+// console.log(Math.min(...array)); -> Result - 1
+
+// Find Difference between max and min value form an array
+
+// function findDifference(array) {
+//   let min = array[0];
+//   let max = array[0];
+//   for (let number of array) {
+//     if (number < min) {
+//       min = number;
+//     } else if (number > max) {
+//       max = number;
+//     }
+//   }
+//   return max - min;
+// }
+
+// console.log(findDifference([1, 2, 3, -6, 12]));
+
+
+// VN: 7.2 - end
+// ========================
