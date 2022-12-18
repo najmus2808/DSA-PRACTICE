@@ -573,3 +573,22 @@
 // ========================
 
 // VN: 7.3 - end
+
+// VN: 7.4 - start
+
+// ========================
+
+// Reverse Number
+
+// function reverseNumber(num) {
+//   let revNum = num.toString().split("").reverse().join("");
+//   if (revNum.endsWith("-")) {
+//     revNum = "-" + revNum.slice(0, revNum.length - 1);
+//   }
+//   return Number(revNum);
+// }
+
+// console.log(reverseNumber(-93));
+
+// ======================
+// VN: 7.4 - end
