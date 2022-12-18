@@ -537,6 +537,39 @@
 
 // console.log(findDifference([1, 2, 3, -6, 12]));
 
-
 // VN: 7.2 - end
 // ========================
+
+// VN: 7.3 - start
+// ========================
+// Reverse a string
+// 1st approach
+// function reverseString(str) {
+//   let revStr = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     revStr += str[i];
+//   }
+//   return revStr;
+// }
+
+// console.log(reverseString("hello"));
+
+// 2nd approach
+
+// function reverseString(str) {
+//   let revStr = "";
+//   for (let char of str) {
+//     revStr = char + revStr;
+//   }
+//   return revStr;
+// }
+
+// console.log(reverseString("hello"));
+
+// 3rd approach
+
+// console.log("hello".split("").reverse().join(""));
+
+// ========================
+
+// VN: 7.3 - end
