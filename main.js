@@ -443,3 +443,29 @@
 
 // VN: 5.5 - end
 // ======================
+
+// VN: 7.1 - start
+// ======================
+// Write a program that prints the number from 1 to 100.But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For number which are multiples of both three and five print "FizzBuzz".
+
+// function fizzBuzz(num) {
+//   let result = "";
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       result += "FizzBuzz \n";
+//     } else if (i % 3 === 0) {
+//       result += "Fizz \n";
+//     } else if (i % 5 === 0) {
+//       result += "Buzz \n";
+//     } else {
+//       result += i + " \n";
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(fizzBuzz(100));
+
+// VN: 7.1 - end
+
+// =======================
