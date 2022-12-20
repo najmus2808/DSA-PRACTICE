@@ -667,3 +667,49 @@
 
 // ===================
 // VN: 7.7 - end
+
+// VN: 7.8 - start
+// ===================
+// Given an array and chunk size, divide the array into many sub arrays
+// where length of each sub arrays are equal to the number of chunk size
+// chunk ([1,2,3,4], 2) --> [[1,2], [3,4]]
+// chunk ([1,2,3,4, 5], 2) --> [[1,2], [3,4], [5]]
+// chunk ([1,2,3,4, 5, 6, 7, 8], 3) --> [[1,2, 3], [4, 5, 6], [7,8]]
+// chunk ([1,2,3,4, 5], 10) --> [[1,2,3,4, 5]]
+
+// function chunk(array, size) {
+//   let chunked = [];
+//   for (let element of array) {
+//     const last = chunked[chunked.length - 1];
+//     if (last && last.length < size) {
+//       last.push(element);
+//     } else {
+//       chunked.push([element]);
+//     }
+//   }
+//   return chunked;
+// }
+
+// console.log(chunk([1, 2, 3, 4], 2));
+// console.log(chunk([1, 2, 3, 4, 5], 2));
+// console.log(chunk([1, 2, 3, 4, 5, 6, 7, 8], 3));
+// console.log(chunk([1, 2, 3, 4, 5], 10));
+
+// function chunk(array, size) {
+//   let chunked = [];
+//   let index = 0;
+//   while (index < array.length) {
+//     const sliceArray = array.slice(index, index + size);
+//     chunked.push(sliceArray);
+//     index += size;
+//   }
+//   return chunked;
+// }
+
+// console.log(chunk([1, 2, 3, 4], 2));
+// console.log(chunk([1, 2, 3, 4, 5], 2));
+// console.log(chunk([1, 2, 3, 4, 5, 6, 7, 8], 3));
+// console.log(chunk([1, 2, 3, 4, 5], 10));
+
+// VN: 7.8 - start
+// ========================
