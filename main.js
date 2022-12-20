@@ -622,3 +622,24 @@
 // VN: 7.5 - end
 
 // ===================
+
+// VN: 7.6 - start
+// ===================
+// check provide string is palindrome
+// if palindrome return true otherwis false
+// non-alphanumeric characters should be ignored
+// race car-> true
+// not a palindrome ->
+
+// function isPalindrome(str) {
+//   const regex = /[\W_]/g;
+//   const normalizeStr = str.toLowerCase().replace(regex, "");
+//   const reverseStr = normalizeStr.split("").reverse().join("");
+//   return normalizeStr === reverseStr;
+// }
+
+// console.log(isPalindrome("race_car"));
+// console.log(isPalindrome("Sakib"));
+
+// VN: 7.6 - end
+// ===================
