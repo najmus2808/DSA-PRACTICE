@@ -592,3 +592,33 @@
 
 // ======================
 // VN: 7.4 - end
+
+// VN: 7.5 - start
+// ======================
+// Given a string, return a character that is most commonly used in the string
+// maxChar("absdddddnm") -> "d"
+// maxChar("aps 11111 mn") -> "1"
+
+// function maxChar(str) {
+//   let charMap = {};
+//   let maxCount = 0;
+//   let maxChar = "";
+//   for (let char of str) {
+//     charMap[char] = (charMap[char] || 0) + 1;
+//   }
+
+//   for (let char in charMap) {
+//     if (charMap[char] > maxCount) {
+//       maxCount = charMap[char];
+//       maxChar = char;
+//     }
+//   }
+//   return maxChar;
+// }
+
+// console.log(maxChar("acdfffftre"));
+// console.log(maxChar("ac111 333333 b"));
+
+// VN: 7.5 - end
+
+// ===================
