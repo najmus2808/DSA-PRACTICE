@@ -711,5 +711,67 @@
 // console.log(chunk([1, 2, 3, 4, 5, 6, 7, 8], 3));
 // console.log(chunk([1, 2, 3, 4, 5], 10));
 
-// VN: 7.8 - start
+// VN: 7.8 - end
 // ========================
+
+
+
+// VN: 8.2 - start
+// ========================
+// isArray same
+// 1. write a function which accepts two arrays and check every value of the first array has its corresponding in second array.
+// 2.The frequency value must be same. -> 1 ta value r jono 1 tar value r jono 1 tai thakte hobe .
+// isSame([1, 2, 4, 5], [3, 5, 6, 10]) -> false
+// isSame([1, 2, 4, 5], [1, 4, 5, 2]) -> tue
+// isSame([1, 2, 4, 5], [1, 2, 4, 5]) -> tue
+// isSame([1, 2, 4, 5], [3, 4, 5, 5, 2]) -> false
+// isSame([1, 2, 4, 5], [3,4,2]) -> false
+
+// 1st approch
+// Time Complexity - O(n + m)
+// Space Complexity - O(1)
+// function isSame(arr1, arr2) {
+//     if (arr1.length !== arr2.length) return false;
+//     for (let i = 0; i < arr1.length; i++) {
+//         let index = arr2.indexOf(arr1[i]);
+//         if (index === -1) {
+//             return false;
+//         } else {
+//             arr2.splice(index, 1);
+//         }
+
+//     }
+//     return true;
+// }
+// console.log(isSame([1, 2, 4, 5], [3, 5, 6, 10]))
+// console.log(isSame([1, 2, 4, 5], [1, 4, 5, 2]))
+
+// 2nd approch
+// Time Complexity - O(n + m + x) -> O(n)
+// Space Complexity - O(n + m)
+// function isSame(arr1, arr2) {
+//     if (arr1.length !== arr2.length) return false;
+//     let hashTable1 = {}
+//     let hashTable2 = {}
+//     for (let num of arr1) {
+//         hashTable1[num] = (hashTable1[num] || 0) + 1;
+//     }
+
+//     for (let num of arr2) {
+//         hashTable2[num] = (hashTable2[num] || 0) + 1
+//     }
+
+//     for (let element in hashTable1) {
+//         if (!element in hashTable2 || hashTable1[element] !== hashTable2[element]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(isSame([1, 2, 4, 5], [3, 5, 6, 10]))
+// console.log(isSame([1, 2, 4, 5], [1, 4, 5, 2]))
+// console.log(isSame([1, 2, 4, 1], [1, 4, 2, 1]))
+
+// VN: 8.2 - end
+// =======================
