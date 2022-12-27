@@ -820,3 +820,44 @@
 
 // VN: 9.1 - end
 // =======================
+
+// VN: 9.2 - start
+// =======================
+// ### Are there any duplicates
+// > Write a function called areThereDuplicates which accepts a sorted array of integers.
+// > The function should return true if there are duplicates otherwise false.
+
+// function areThereDuplicates(array) {
+//   let left = 0;
+//   let right = 1;
+//   while (left < array.length) {
+//     if (array[left] === array[right]) {
+//       return true;
+//     }
+//     left++;
+//     right++;
+//   }
+//   return false;
+// }
+
+// console.log(areThereDuplicates([1, 2, 3]));
+// console.log(areThereDuplicates([1, 2, 2, 3]));
+// console.log(areThereDuplicates([-3, -1, -1, 2]));
+
+// function areThereDuplicatesTwo(array) {
+//   let left = 0;
+//   while (left < array.length) {
+//     if (array[left] === array[left + 1]) {
+//       return true;
+//     }
+//     left++;
+//   }
+//   return false;
+// }
+
+// console.log(areThereDuplicatesTwo([1, 2, 3]));
+// console.log(areThereDuplicatesTwo([1, 2, 2, 3]));
+// console.log(areThereDuplicatesTwo([-3, -1, -1, 2]));
+
+// VN: 9.2 - end
+// =======================
