@@ -714,11 +714,14 @@
 // VN: 7.8 - end
 // ========================
 
-
-
 // VN: 8.2 - start
 // ========================
-// isArray same
+// ### Using power of HashTable to track down the data or data with count
+// (frequency of counter).
+// > This  pattern used objects or sets to collect values/ frequencies of values.
+// This can often avoid the need for nested loops or O(n^2) operations with arrays / strings.
+
+// ###isArray same
 // 1. write a function which accepts two arrays and check every value of the first array has its corresponding in second array.
 // 2.The frequency value must be same. -> 1 ta value r jono 1 tar value r jono 1 tai thakte hobe .
 // isSame([1, 2, 4, 5], [3, 5, 6, 10]) -> false
@@ -774,4 +777,46 @@
 // console.log(isSame([1, 2, 4, 1], [1, 4, 2, 1]))
 
 // VN: 8.2 - end
+// =======================
+
+// VN: 9.1 - start
+// =======================
+
+// ## MULTIPLE POINTERS
+// Creating pointers of values that correspond to an index of position and move
+// towards the beginning, middle of end based on a certain condition.
+// > Very efficient for solving problems with minimal space complexity.
+
+// ### Sum Zero
+
+// Write a function called sumZero which accepts a sorted array of integers.The  function
+// should find the first pair where the sum is Zero(0).
+// Return an array that includes both values that sum to zero of
+//  undefined if a pair does not exist.
+
+// function sumZero(array) {
+//   let left = 0;
+//   let right = array.length - 1;
+//   while (left < right) {
+//     let sum = array[left] + array[right];
+
+//     if (sum === 0) {
+//       return [array[left], array[right]];
+//     }
+//     if (sum > 0) {
+//       right--;
+//       //   if array is desending order then -> left ++;
+//     }
+//     if (sum < 0) {
+//       left++;
+//       //   if array is desending order then -> right --;
+//     }
+//   }
+//   return undefined;
+// }
+// console.log(sumZero([-3, -2, -1, 0, 1, 2, 3]));
+// console.log(sumZero([-2, 0, 2, 3]));
+// console.log(sumZero([1, 2, 3]));
+
+// VN: 9.1 - end
 // =======================
