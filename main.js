@@ -889,3 +889,54 @@
 
 // VN: 9.3 - end
 // ======================
+
+// VN: 9.4 - start
+// ======================
+// ### Slinding Window
+// >This pattern involves creating a window which can either be an array  or number
+// from one position to another.
+// > Depending on a creation condition, the window  either increases or closes (and a new window is created).
+// > Very useful for keeping track of a subset of data in an array/ string etc.
+
+// ###  Max Subarray Sum
+// >Write a function called maxSubarraySum which accepts an array of integers and a number
+// called n.
+// > The function should calculate the maximum sum  of n consecutive elements in the array.
+
+// function maxSubarraySum(array, num) {
+//   if (array.length < num) return null;
+//   let max = -Infinity;
+//   for (let i = 0; i < array.length - num + 1; i++) {
+//     let tempSum = 0;
+//     for (let j = 0; j < num; j++) {
+//       tempSum += array[i + j];
+//     }
+//     max = Math.max(max, tempSum);
+//   }
+//   return max;
+// }
+
+// console.log(maxSubarraySum([1, 3, 4, 2, 6, 8, 1, -3], 2));
+// console.log(maxSubarraySum([1, 3, 4, 2, 6, 8, 1, -3], 4));
+
+// function maxSubarraySum(array, num) {
+//   if (array.length < num) return null;
+//   let max = 0;
+//   let tempSum = 0;
+//   for (let i = 0; i < num; i++) {
+//     max += array[i];
+//   }
+//   tempSum = max;
+//   for (let j = num; j < array.length; j++) {
+//     tempSum = tempSum - array[j - num] + array[j];
+//     max = Math.max(tempSum, max);
+//   }
+//   return max;
+// }
+
+// console.log(maxSubarraySum([1, 3, 4, 2, 6, 8, 1, -3], 2));
+// console.log(maxSubarraySum([1, 3, 4, 2, 6, 8, 1, -3], 4));
+// console.log(maxSubarraySum([1, 3, 4, 2, 6, 8, 1, -3], 3));
+
+// VN: 9.4 - end
+// ======================
