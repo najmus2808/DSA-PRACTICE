@@ -940,3 +940,29 @@
 
 // VN: 9.4 - end
 // ======================
+
+// VN: 9.5 - start
+// ======================
+// 53. Maximum Subarray (leet code 53)
+// Given an integer array nums, find the
+// subarray which has the largest sum and return its sum.
+// > A Subarray is a contiguous part of an array.
+// ### kadane's algorithm
+
+// var maxSubArray = function (nums) {
+//   let current_sum = nums[0];
+//   let max_sum = current_sum;
+//   for (let i = 1; i < nums.length; i++) {
+//     current_sum = Math.max(current_sum + nums[i], nums[i]);
+//     max_sum = Math.max(current_sum, max_sum);
+//   }
+//   return max_sum;
+// };
+
+// console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+// console.log(maxSubArray([5, 4, -1, 7, 8]));
+// console.log(maxSubArray([1]));
+// console.log(maxSubArray([-2, 1, -3, 4, -1]));
+
+// VN: 9.5 - end
+// ======================
