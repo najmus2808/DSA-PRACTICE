@@ -22,6 +22,7 @@
 // ======================
 
 // Binary Search / Divide and Conquer
+// ### Apply for only sorted array
 
 // function searchEleIndex(array, searchElement) {
 //   let low = 0;
