@@ -98,3 +98,32 @@
 
 // VN: 10.4 - end
 // ======================
+
+// VN: 10.5 - start
+// ======================
+// 28. Find the Index of the First Occurrence in a String (leet code 28)
+// > Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+// if needle === "" return zero (0);
+
+// Time Complexity : O(n * m)
+// Space Complexity : O(1)
+
+// var strStr = function (haystack, needle) {
+//   if (needle === "") return 0;
+//   for (let i = 0; i <= haystack.length - needle.length; i++) {
+//     let j = 0;
+//     for (; j < needle.length; j++) {
+//       if (haystack[i + j] !== needle[j]) break;
+//     }
+//     if (j === needle.length) return i;
+//   }
+//   return -1;
+// };
+
+// console.log(strStr("sadbutsad", "sad"));
+// console.log(strStr("leetcode", "leeto"));
+// console.log(strStr("sakib", ""));
+
+// VN: 10.5 - end
+// ======================
