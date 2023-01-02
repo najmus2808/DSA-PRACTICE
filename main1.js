@@ -1,8 +1,8 @@
 // ================== Search Algorithom Start ======================
 
-// Linear Search Approach: A simple approach is to do a linear search. The time complexity of the Linear search is O(n). Another approach to perform the same task is using Binary Search.  
+// Linear Search Approach: A simple approach is to do a linear search. The time complexity of the Linear search is O(n). Another approach to perform the same task is using Binary Search.
 
-// Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). 
+// Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n).
 
 // VN: 10.1 - start
 // ======================
@@ -134,3 +134,42 @@
 // ======================
 
 // Week-4.1 Start
+
+// VN: 11.1 - Start
+// ======================
+// ## Staircase Pattern
+// > Write a function that accepts a positive number N.
+// the function should console log a step shape with N levels
+// using the # character. Make sure the step has spaces on the line
+// right hand side.
+
+// Example
+// steps(2) - > '# '
+//              '##'
+
+// steps(3) - > '# '
+//              '## '
+//              '###'
+
+// function steps(n) {
+//     for (let row = 0; row < n; row++) {
+//         let step = "";
+//         for (let column = 0; column < n; column++) {
+//             if (column <= row) {
+//                 step += "#"
+//             } else {
+//                 step += ""
+//             }
+//         }
+//         console.log(step);
+//     }
+
+// }
+
+// steps(3);
+// steps(5);
+// steps(7);
+
+
+// VN: 11.1 - end
+// ======================
