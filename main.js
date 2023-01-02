@@ -864,10 +864,10 @@
 
 // VN: 9.3 - start
 // =======================
-// ### Valid palindrom - leet code 125
+// ### Valid palindrom - leet code 125 - Submitted
 // (Alphanumeric characters include letters and numbers.)
 
-// function isPalindrom(s) {
+// var isPalindrome = function (s) {
 //   const normalizeStr = s.replace(/[\W_]/g, "").toLowerCase();
 //   let left = 0;
 //   let right = normalizeStr.length - 1;
@@ -879,13 +879,13 @@
 //     right--;
 //   }
 //   return true;
-// }
+// };
 
-// console.log(isPalindrom("A man, a plan, a canal: Panama"));
-// console.log(isPalindrom("race a car"));
-// console.log(isPalindrom("race  car"));
-// console.log(isPalindrom("race_9  car"));
-// console.log(isPalindrom(" "));
+// console.log(isPalindrome("A man, a plan, a canal: Panama"));
+// console.log(isPalindrome("race a car"));
+// console.log(isPalindrome("race  car"));
+// console.log(isPalindrome("race_9  car"));
+// console.log(isPalindrome(" "));
 
 // VN: 9.3 - end
 // ======================
