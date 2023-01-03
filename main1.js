@@ -236,7 +236,7 @@
 
 // Step visualization. How to get this out put = 15.
 // > Stack Data Structure for Function execution\
-                            //   0
+//   0
 //                 1 + sumRange(num - 1); = 1 + 0 = 1
 //             2 + sumRange(num - 1);     = 2 + 1 = 3
 //         3 + sumRange(num - 1);         = 3 + 3 = 6
@@ -263,5 +263,46 @@
 
 
 // VN: 12.3 - end
+// ======================
+
+
+// VN: 12.4 - Start
+// ======================
+// Factorial
+// !5 = 5 * 4 * 3 * 2 * 1
+// Decremental & Iterative way
+// function factorial(n) {
+//     let result = 1;
+//     for (let i = n; i >= 1; i--) {
+//         result *= i;
+//     }
+//     return result;
+// }
+
+// console.log(factorial(5));
+
+// Incremental & Iterative way
+
+// function factorial(n) {
+//     let result = 1;
+//     for (let i = 1; i <= n; i++) {
+//         result *= i;
+//     }
+//     return result;
+// }
+
+// console.log(factorial(5));
+
+// Recursive way
+
+// function factorial(n) {
+//     if (n === 1) return 1;
+//     return n * factorial(n - 1)
+
+// }
+
+// console.log(factorial(5));
+
+// VN: 12.4 - end
 // ======================
 
