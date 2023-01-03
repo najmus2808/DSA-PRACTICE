@@ -173,3 +173,41 @@
 
 // VN: 11.1 - end
 // ======================
+
+// VN: 11.2 - start
+// ======================
+
+
+// Not Doing
+
+// VN: 11.2 - end
+// ======================
+
+// VN: 12.1 - Theory
+
+
+// VN: 12.2 - start
+// ======================
+// Recursion
+// > Print 10 to 1
+// #iterative solution
+
+// function countToZero(n) {
+//     for (let i = n; i >= 0; i--) {
+//         console.log(i);
+//     }
+// }
+
+// countToZero(10)
+
+// recursive solution
+// function countToZero(n) {
+//     console.log(n);
+//     if (n === 0) return;
+//     countToZero(n - 1)
+// }
+
+// countToZero(10)
+
+// VN: 12.2 - end
+// ======================
