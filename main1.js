@@ -201,7 +201,7 @@
 // countToZero(10)
 
 // recursive solution
-// function countToZero(n) {
+// function countToZero(n = 10) {
 //     console.log(n);
 //     if (n === 0) return;
 //     countToZero(n - 1)
@@ -209,5 +209,7 @@
 
 // countToZero(10)
 
+// > use default parameter cz if the argument is missing then the function call never stop. then call stack is full and throw an error.
+// > must add return at the right place for stop the function;
 // VN: 12.2 - end
 // ======================
