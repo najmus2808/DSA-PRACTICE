@@ -213,3 +213,55 @@
 // > must add return at the right place for stop the function;
 // VN: 12.2 - end
 // ======================
+
+// VN: 12.3 - start
+// ======================
+
+// function sumRange(start, end) {
+//     let total = 0;
+//     for (let i = end; i >= start; i--) {
+//         total += i;
+//     }
+//     return total;
+// }
+
+// console.log(sumRange(1, 10));
+
+// function sumRange(num) {
+//     if (num === 0) return 0;
+//     return num + sumRange(num - 1);
+// }
+
+// console.log(sumRange(5));
+
+// Step visualization. How to get this out put = 15.
+// > Stack Data Structure for Function execution\
+                            //   0
+//                 1 + sumRange(num - 1); = 1 + 0 = 1
+//             2 + sumRange(num - 1);     = 2 + 1 = 3
+//         3 + sumRange(num - 1);         = 3 + 3 = 6
+//     4 + sumRange(num - 1);             = 4 + 6 = 10
+// 5 + sumRange(num - 1);                 = 5 + 10 = 15
+// sumRange(5)                            = 15
+
+
+// Decremental way
+// function sumRange(start, end) {
+//     if (end === start) return start;
+//     return end + sumRange(start, end - 1);
+// }
+
+// console.log(sumRange(0, 5));
+
+// Incremental way
+// function sumRange(start, end) {
+//     if (start === end) return end;
+//     return start + sumRange(start + 1, end);
+// }
+
+// console.log(sumRange(1, 10));
+
+
+// VN: 12.3 - end
+// ======================
+
