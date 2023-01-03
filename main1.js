@@ -344,5 +344,35 @@
 
 // console.log(createRange(10, 20));
 
-// VN: 12.5 - end
+// VN: 12.6 - end
+// ======================
+
+// VN: 12.7 - start
+// ======================
+// fibonacci series
+// [0, 1, 1, 2, 3, 5]
+// find out the nth number of fibonacci series
+// Iterative way
+// function fibonacci(n) {
+//   const result = [0, 1];
+//   for (let i = 2; i <= n; i++) {
+//     result.push(result[i - 1] + result[i - 2]);
+//   }
+//   2;
+//   console.log(result);
+//   return result[n];
+// }
+
+// console.log(fibonacci(10));
+
+// recursive way
+// function fibonacci(n) {
+//   // basa case
+//   if (n <= 2) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+
+// console.log(fibonacci(10));
+
+// VN: 12.7 - end
 // ======================
