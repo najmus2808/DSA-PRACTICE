@@ -329,3 +329,20 @@
 // createRange(10, 15);
 // VN: 12.5 - end
 // ======================
+
+// VN: 12.6 - start
+// ======================
+//  pure recursive way
+
+// function createRange(start, end = 20, rangeArray = []) {
+//   rangeArray = rangeArray.concat(start);
+//   if (start === end) {
+//     return rangeArray;
+//   }
+//   return createRange(start + 1, end, rangeArray);
+// }
+
+// console.log(createRange(10, 20));
+
+// VN: 12.5 - end
+// ======================
