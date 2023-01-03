@@ -170,13 +170,11 @@
 // steps(5);
 // steps(7);
 
-
 // VN: 11.1 - end
 // ======================
 
 // VN: 11.2 - start
 // ======================
-
 
 // Not Doing
 
@@ -184,7 +182,6 @@
 // ======================
 
 // VN: 12.1 - Theory
-
 
 // VN: 12.2 - start
 // ======================
@@ -244,7 +241,6 @@
 // 5 + sumRange(num - 1);                 = 5 + 10 = 15
 // sumRange(5)                            = 15
 
-
 // Decremental way
 // function sumRange(start, end) {
 //     if (end === start) return start;
@@ -261,10 +257,8 @@
 
 // console.log(sumRange(1, 10));
 
-
 // VN: 12.3 - end
 // ======================
-
 
 // VN: 12.4 - Start
 // ======================
@@ -306,3 +300,32 @@
 // VN: 12.4 - end
 // ======================
 
+// VN: 12.5 - start
+// ======================
+
+// iterative way
+// function createRange(start, end) {
+//   const result = [];
+//   for (let i = start; i <= end; i++) {
+//     result.push(i);
+//   }
+//   console.log(result);
+// }
+
+// createRange(10, 20);
+
+// recursive way
+// impure recursive function
+// function createRange(start, end) {
+//   const result = [];
+//   function helper(helperInput, targetNum = 20) {
+//     result.push(helperInput);
+//     if (helperInput === targetNum) return;
+//     helper(helperInput + 1, targetNum);
+//   }
+//   helper(start, end);
+//   console.log(result);
+// }
+// createRange(10, 15);
+// VN: 12.5 - end
+// ======================
