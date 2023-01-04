@@ -943,7 +943,7 @@
 
 // VN: 9.5 - start
 // ======================
-// 53. Maximum Subarray (leet code 53)
+// 53. Maximum Subarray (leet code 53) - Submitted
 // Given an integer array nums, find the
 // subarray which has the largest sum and return its sum.
 // > A Subarray is a contiguous part of an array.
@@ -969,7 +969,7 @@
 
 // VN: 9.6 - start
 // ======================
-// ### 3. Longest Substring Without Repeating Characters (leet code 3)
+// ### 3. Longest Substring Without Repeating Characters (leet code 3) - Submitted
 // > Given a string s, find the length of the longest substring without repeating characters
 
 // var lengthOfLongestSubstring = function (s) {
@@ -999,7 +999,7 @@
 
 // VN: 9.7 - start
 // ======================
-// 209. Minimum Size Subarray Sum (leet code 209)
+// 209. Minimum Size Subarray Sum (leet code 209) - Submitted
 // > Given an array of positive integers nums and a positive integer target, return the minimal length of a
 // subarray whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
 
