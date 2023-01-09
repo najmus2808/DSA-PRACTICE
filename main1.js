@@ -377,7 +377,69 @@
 // VN: 12.7 - end
 // ======================
 
-// VN: 12.7 - end
+// Review Calss 4
 // ======================
 
+// function flatten(arr) {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Array.isArray(arr[i])) {
+//       newArr = newArr.concat(flatten(arr[i]));
+//     } else {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// }
 
+// console.log(flatten([1, [-2, -5], 3, [6, [-0], 9, [0, 5, 7]]]));
+
+// function collectStr(obj) {
+//   let stringsArray = [];
+
+//   function gatherStr(o) {
+//     for (let key in o) {
+//       if (typeof o[key] === "object") {
+//         return gatherStr(o[key]);
+//       } else {
+//         stringsArray.push(o[key]);
+//       }
+//     }
+//   }
+//   gatherStr(obj);
+//   return stringsArray;
+// }
+
+// console.log(
+//   collectStr({ name: "Sakib", description: { empType: "Permanent" } })
+// );
+
+// 231. Power of Two - leet code (231)
+// Given an integer n, return true if it is a power of two. Otherwise, return false.
+// An integer n is a power of two, if there exists an integer x such that n == 2x.
+
+// var isPowerOfTwo = function (n) {
+//   if (n < 1) {
+//     return false;
+//   }
+
+//   let devideNumber = n;
+//   while (devideNumber !== 1) {
+//     if (devideNumber % 2 !== 0) {
+//       return false;
+//     }
+//     devideNumber = devideNumber / 2;
+//   }
+//   return true;
+// };
+
+// Solve this problem with bit wise operation
+
+// var isPowerOfTwo = function (n) {
+//   if (n < 1) {
+//     return false;
+//   }
+//   return (n & (n - 1)) === 0;
+// };
+
+// Review Class 4 end
