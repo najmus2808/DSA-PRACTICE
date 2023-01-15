@@ -1,5 +1,8 @@
 // Read Documentation : https://www.geeksforgeeks.org/bubble-sort/
 // Bubble Sort
+// Move the larget element at the end.
+//Good for almost sorted array or sorted array.
+// Time Comlexity : O(n^2) - if array is sorted or almost sorted then O(n).
 // Follow the below steps to solve the problem:
 
 // Run a nested for loop to traverse the input array using two variables i and j, such that 0 ≤ i < n-1 and 0 ≤ j < n-i-1
