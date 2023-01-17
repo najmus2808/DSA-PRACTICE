@@ -88,6 +88,18 @@ class LinkedList {
     }
     return temp;
   }
+
+  //   find item at specific index in the linked list
+  // Time Complexity: O(n)
+  get(index) {
+    // check validation of index
+    if (index < 0 || index >= this.length) return null;
+    let temp = this.head;
+    for (let i = 0; i < index; i++) {
+      temp = temp.next;
+    }
+    return temp;
+  }
 }
 
 const linkedList = new LinkedList(10);
@@ -96,7 +108,8 @@ const linkedList = new LinkedList(10);
 // console.log(linkedList);
 // linkedList.shift();
 // console.log(linkedList);
-linkedList.pop();
-console.log(linkedList);
+// linkedList.pop();
+// console.log(linkedList);
+// console.log(linkedList.get(1));
 // End VN: 15.2
 // =================
