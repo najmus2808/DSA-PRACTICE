@@ -100,6 +100,36 @@ class LinkedList {
     }
     return temp;
   }
+
+  //   inserting item at specific index
+  // Time Complexity: O(n)
+  set(index, value) {
+    let temp = this.get(index);
+    if (temp) {
+      temp.value = value;
+      return true;
+    }
+    return false;
+  }
+
+  //   inserting node at specific index
+  // Time Complexity: O(n)
+  insert(index, value) {
+    // validation index
+    if (index < 0 || index > this.length) return false;
+    // inserting node at the beginning
+    if (index === 0) return this.unshift(value);
+    // inserting node at the en
+    if (index === this.length) return this.push(value);
+    // inserting in between
+    const newNode = new Node(value);
+    // stopping just before the index node
+    const temp = this.get(index - 1);
+    newNode.next = temp.next;
+    temp.next = newNode;
+    this.length;
+    return true;
+  }
 }
 
 const linkedList = new LinkedList(10);
