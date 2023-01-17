@@ -47,12 +47,31 @@ class LinkedList {
     }
     this.length++;
   }
+
+  //   remove node from beginning of the linked list
+  //   Time Complexity: O(1)
+  shift() {
+    if (!this.head) {
+      return null;
+    }
+    const temp = this.head;
+    this.head = this.head.next;
+    temp.next = null;
+    this.length--;
+
+    if (this.length === 0) {
+      this.tail = null;
+    }
+
+    return temp;
+  }
 }
 
 const linkedList = new LinkedList(10);
 linkedList.push(11);
-linkedList.unshift(9);
+// linkedList.unshift(9);
 console.log(linkedList);
-
+linkedList.shift();
+console.log(linkedList);
 // End VN: 15.2
 // =================
