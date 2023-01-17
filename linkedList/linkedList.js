@@ -147,6 +147,25 @@ class LinkedList {
 
     return temp;
   }
+
+  //   reversing the linked list
+  // Time Complexity: O(n)
+  reverse() {
+    // changing the head to tail, tail to head
+    let temp = this.head;
+    this.head = this.tail;
+    this.tail = temp;
+
+    // working with three parameters
+    let next = temp.next;
+    let prev = null;
+    for (let i = 0; i < this.length; i++) {
+      next = temp.next;
+      temp.next = prev;
+      prev = temp;
+      temp = next;
+    }
+  }
 }
 
 const linkedList = new LinkedList(10);
