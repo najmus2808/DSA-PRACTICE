@@ -130,6 +130,23 @@ class LinkedList {
     this.length;
     return true;
   }
+
+  //   removing item at the specific index
+  // Time Complexity: O(n)
+  remove(index) {
+    if (index < 0 || index >= this.length) return false;
+    // removing from the beginning
+    if (index === 0) return this.shift();
+    // removing from the end
+    if (index === this.length - 1) return this.pop();
+    const prevRef = this.get(index - 1);
+    let temp = prevRef.next;
+    prevRef.next = temp.next;
+    temp.next = null;
+    this.length--;
+
+    return temp;
+  }
 }
 
 const linkedList = new LinkedList(10);
