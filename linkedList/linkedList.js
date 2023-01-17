@@ -30,13 +30,28 @@ class LinkedList {
     } else {
       this.tail.next = newNode; // adding new node
       this.tail = newNode; // change the place of tail
-      this.length++; // increment the length
     }
+    this.length++; // increment the length
+  }
+
+  //   adding node at the beginning of the linked list
+  //   Time Complexity: O(1)
+  unshift(value) {
+    const newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head; // Connect first then replace the pointer or use temporary variable for swap
+      this.head = newNode;
+    }
+    this.length++;
   }
 }
 
 const linkedList = new LinkedList(10);
 linkedList.push(11);
+linkedList.unshift(9);
 console.log(linkedList);
 
 // End VN: 15.2
