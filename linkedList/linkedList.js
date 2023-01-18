@@ -1,4 +1,4 @@
-// Linked List (singly linked list, doubly linked list)
+// Linked List (singly linked list, doubly linked list, circular linked list)
 // Start Weak: 6.1
 // =================
 
