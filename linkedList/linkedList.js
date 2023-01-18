@@ -175,7 +175,12 @@ const linkedList = new LinkedList(10);
 // linkedList.shift();
 // console.log(linkedList);
 // linkedList.pop();
-// console.log(linkedList);
+console.log(linkedList);
+linkedList.push(11);
+console.log(linkedList);
+linkedList.reverse();
+console.log(linkedList);
+
 // console.log(linkedList.get(1));
 
 // Array vs Singly Linked List
