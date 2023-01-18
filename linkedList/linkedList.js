@@ -127,7 +127,7 @@ class LinkedList {
     const temp = this.get(index - 1);
     newNode.next = temp.next;
     temp.next = newNode;
-    this.length;
+    this.length++;
     return true;
   }
 
