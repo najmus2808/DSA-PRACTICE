@@ -1,5 +1,5 @@
 // Linked List (singly linked list, doubly linked list)
-// Start VN: 15.2
+// Start Weak: 6.1
 // =================
 
 // create a single Node
@@ -177,5 +177,17 @@ const linkedList = new LinkedList(10);
 // linkedList.pop();
 // console.log(linkedList);
 // console.log(linkedList.get(1));
-// End VN: 15.2
+
+// Array vs Singly Linked List
+// [1, 2, 3, 4, 5]
+//            A         L
+// push      O(1)      O(1)
+// pop       O(1)      O(n)
+// shift     O(n)      O(1)
+// unshift   O(n)      O(1)
+// access    O(1)      O(n)
+// insert it depends start(?) end(?) mid- O(n)
+// remove it depends start(?) end(?) mid- O(n)
+
+// End Weak: 6.1
 // =================
