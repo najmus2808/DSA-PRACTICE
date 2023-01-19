@@ -64,3 +64,37 @@ var hasCycle = function (head) {
   }
   return false;
 };
+
+// VN : 16.3
+// ==================
+// 234. Palindrome Linked List (leet code - 234)
+// Given the head of a singly linked list, return true if it is a
+// palindrome or false otherwise.
+
+function reverse(head) {
+  let prev = null;
+  let curr = head;
+  let forw = null;
+  while (curr != null) {
+    forw = curr.next;
+    curr.next = prev;
+    prev = curr;
+    curr = forw;
+  }
+  return prev;
+}
+var isPalindrome = function (head) {
+  let slow = head;
+  let fast = head;
+  while (fast != null && fast.next != null) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  slow = reverse(slow);
+  while (slow != null && slow.val == head.val) {
+    head = head.next;
+    slow = slow.next;
+  }
+  return slow == null;
+};
