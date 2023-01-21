@@ -101,7 +101,7 @@ var isPalindrome = function (head) {
 
 // VN : 16.4
 // ==================
-// 160. Intersection of Two Linked Lists
+// 160. Intersection of Two Linked Lists (leet code- 160)
 // Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
 
 var getIntersectionNode = function (headA, headB) {
@@ -112,4 +112,28 @@ var getIntersectionNode = function (headA, headB) {
     b = b === null ? headA : b.next;
   }
   return b;
+};
+
+// VN : 16.5
+// ==================
+// 19. Remove Nth Node From End of List (leet code - 19)
+// Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+var removeNthFromEnd = function (head, n) {
+  const dummyHead = new ListNode(0);
+  dummyHead.next = head;
+  let slow = dummyHead;
+  let fast = head;
+
+  for (let i = 1; i <= n; i++) {
+    fast = fast.next;
+  }
+
+  while (fast != null) {
+    fast = fast.next;
+    slow = slow.next;
+  }
+  slow.next = slow.next.next;
+
+  return dummyHead.next;
 };
