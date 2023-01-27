@@ -137,3 +137,34 @@ var removeNthFromEnd = function (head, n) {
 
   return dummyHead.next;
 };
+
+// VN : 16.6
+// ==================
+// 2. Add Two Numbers - (leet code 2)
+// You are given two non-empty linked lists representing two non-negative integers.
+// The digits are stored in reverse order, and each of their nodes contains a single digit.
+//  Add the two numbers and return the sum as a linked list.
+
+// You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+var addTwoNumbers = function (l1, l2) {
+  const dummyHead = new ListNode(0);
+  let l3 = dummyHead;
+  let carry = 0;
+
+  while (l1 != null || l2 != null) {
+    let currentSum = (l1?.val || 0) + (l2?.val || 0) + carry; 
+    carry = Math.floor(currentSum / 10);
+    let lastDigit = currentSum % 10;
+    let newNode = new ListNode(lastDigit);
+    l3.next = newNode;
+    if (l1 != null) l1 = l1.next;
+    if (l2 != null) l2 = l2.next;
+    l3 = l3.next;
+  }
+  if (carry > 0) {
+    const newNode = new ListNode(carry);
+    l3.next = newNode;
+  }
+  return dummyHead.next;
+};
