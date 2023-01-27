@@ -57,3 +57,14 @@ queue.dequeue();
 queue.dequeue();
 queue.dequeue();
 console.log(queue);
+
+// Array as Stack
+// [1, 2, 3, 4, 5]
+// push , pop  - O(1) - At the end
+// shift, unshift - O(n) - At the beginning
+
+// Array as Queue
+// [1, 2, 3, 4, 5]
+// push (adding) - O(1) - At the end
+// shift (removing) - O(n) - At the beginning
+// Better use linked list for get better performance.
