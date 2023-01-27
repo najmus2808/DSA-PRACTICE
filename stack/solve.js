@@ -19,7 +19,7 @@ var isValid = function (s) {
     } else {
       if (stack.length === 0) return false;
       const last = stack.pop();
-      if (pairs[last] !== last) return false;
+      if (pairs[last] !== char) return false;
     }
   }
 
