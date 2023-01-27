@@ -1,4 +1,4 @@
-// Stack - Last in Fast out
+// Stack - Last in First out (LIFO)
 // Implementing Stack with Linked List and we choose the biginig of linked list for push node and pop node.
 // Linked List
 // push - O(1); // add from end
@@ -58,3 +58,14 @@ stack.push(13);
 stack.pop();
 console.log(stack);
 console.log(stack.peek());
+
+// Array as Stack
+// [1, 2, 3, 4, 5]
+// push , pop  - O(1) - At the end
+// shift, unshift - O(n) - At the beginning
+
+// Array as Queue
+// [1, 2, 3, 4, 5]
+// push (adding) - O(1) - At the end
+// shift (removing) - O(n) - At the beginning
+// Better use linked list for get better performance.
