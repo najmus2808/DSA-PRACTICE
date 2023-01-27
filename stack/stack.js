@@ -1,5 +1,10 @@
 // Stack - Last in Fast out
 // Implementing Stack with Linked List and we choose the biginig of linked list for push node and pop node.
+// Linked List
+// push - O(1); // add from end
+// pop - O(n); // remove from end
+// shift - O(1); // remove from beginning
+// unshift - O(1); // add from beginning
 
 class Node {
   constructor(value) {
